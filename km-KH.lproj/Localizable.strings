@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  EasyCheck App
+
+  Created by Apple on 10/2/25.
+  
+*/
+"home" = "ទំព័រដើម";
+"history" = "ប្រវត្ត";
+"schedule" = "កាលវិភាគ";
+"notification" = "សារដំណឹង";
+"profile" = "ព៏ត៏មានផ្លាល់ខ្លួន";
+
+
+
+
+
+"welcome_message" = "សូមស្វាគមន៍​";
+"edit_button" = "កែប្រែ";

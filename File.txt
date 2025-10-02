@@ -1,0 +1,13 @@
+# 📱 MVVM with Alamofire (SwiftUI + Combine)
+
+This project demonstrates a clean **MVVM (Model-View-ViewModel)** architecture in Swift, with **Alamofire** for networking and **Combine** for reactive data binding.  
+
+The goal is to achieve a clear separation of concerns:  
+- **Model** → Defines your data structures.  
+- **Network Service / Repository** → Handles API requests & JSON decoding.  
+- **ViewModel** → Business & presentation logic, connects Network with UI.  
+- **View (SwiftUI)** → Declares UI, reacts automatically to `@Published` changes in ViewModel.  
+
+---
+
+## 📂 Project Structure
