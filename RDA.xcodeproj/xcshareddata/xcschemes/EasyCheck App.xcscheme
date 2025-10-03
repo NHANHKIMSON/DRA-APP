@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "181AC5D92E8CE41C006F60EC"
-               BuildableName = "EasyCheck App.app"
-               BlueprintName = "EasyCheck App"
-               ReferencedContainer = "container:EasyCheck App.xcodeproj">
+               BuildableName = "RDA.app"
+               BlueprintName = "RDA"
+               ReferencedContainer = "container:RDA.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,9 +36,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "181AC5E62E8CE41E006F60EC"
-               BuildableName = "EasyCheck AppTests.xctest"
-               BlueprintName = "EasyCheck AppTests"
-               ReferencedContainer = "container:EasyCheck App.xcodeproj">
+               BuildableName = "RDATests.xctest"
+               BlueprintName = "RDATests"
+               ReferencedContainer = "container:RDA.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "181AC5F02E8CE41E006F60EC"
-               BuildableName = "EasyCheck AppUITests.xctest"
-               BlueprintName = "EasyCheck AppUITests"
-               ReferencedContainer = "container:EasyCheck App.xcodeproj">
+               BuildableName = "RDAUITests.xctest"
+               BlueprintName = "RDAUITests"
+               ReferencedContainer = "container:RDA.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "181AC5D92E8CE41C006F60EC"
-            BuildableName = "EasyCheck App.app"
-            BlueprintName = "EasyCheck App"
-            ReferencedContainer = "container:EasyCheck App.xcodeproj">
+            BuildableName = "RDA.app"
+            BlueprintName = "RDA"
+            ReferencedContainer = "container:RDA.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -87,9 +87,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "181AC5D92E8CE41C006F60EC"
-            BuildableName = "EasyCheck App.app"
-            BlueprintName = "EasyCheck App"
-            ReferencedContainer = "container:EasyCheck App.xcodeproj">
+            BuildableName = "RDA.app"
+            BlueprintName = "RDA"
+            ReferencedContainer = "container:RDA.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

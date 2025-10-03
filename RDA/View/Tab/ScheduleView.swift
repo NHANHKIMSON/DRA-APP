@@ -1,10 +1,3 @@
-//
-//  Schedule.swift
-//  EasyCheck App
-//
-//  Created by Apple on 10/2/25.
-//
-
 import SwiftUI
 struct ScheduleView: View{
     @State var date: Date = Date.now
