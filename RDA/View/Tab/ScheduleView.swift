@@ -1,5 +1,6 @@
 import SwiftUI
 struct ScheduleView: View{
+    @EnvironmentObject var language: LanguageManager
     @State var date: Date = Date.now
     var body: some View{
         VStack {
@@ -7,7 +8,8 @@ struct ScheduleView: View{
                 Text("Date")
             })
             .datePickerStyle(.graphical)
-            .environment(\.font, .custom("NotoSans-Regular", size: 16))
+           Text("Schedule")
+                .font(.custom(language.getFont(), size: 32))
         }
     }
 }

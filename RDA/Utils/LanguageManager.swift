@@ -1,8 +1,3 @@
-//import SwiftUI
-//import Foundation
-//class LanguageManager: ObservableObject {
-//    @Published var local: Locale = Locale(identifier: AppLanguage.english.rawValue)    
-//}
 import SwiftUI
 class LanguageManager: ObservableObject {
     @Published var currentLocale: Locale = .init(identifier: "en")
@@ -12,6 +7,14 @@ class LanguageManager: ObservableObject {
     func setLanguage(_ code: String) {
         currentLocale = Locale(identifier: code)
         UserDefaults.standard.set(code, forKey: "appLanguage")
+    }
+    
+    func getFont()-> String{
+        switch currentLocale.identifier{
+        case "km": return "KantumruyPro-Regular"   // Khmer font
+        case "ko": return "NotoSansKR-Regular"     // Korean font
+        default:   return "NotoSans-Regular"       // English font
+        }
     }
     
     init() {
