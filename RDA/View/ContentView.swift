@@ -20,7 +20,7 @@ struct ContentView: View {
                         Text("profile")
                     }
             }
-            .tint(Color("PrimaryColor"))
+            .tint(Color("Prime"))
             .font(.custom("Noto Sans-Thin", size: 32))
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
