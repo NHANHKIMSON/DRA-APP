@@ -1,8 +1,7 @@
 import SwiftUI
-@main
-struct EasyCheck_AppApp: App {
-    @StateObject var languageManager = LanguageManager.shared
+struct ColorSchemePicker: View {
     @AppStorage("appearance") private var selectedAppearance: Appearance = .system
+        
         var colorScheme: ColorScheme? {
             switch selectedAppearance {
             case .light:
@@ -13,12 +12,12 @@ struct EasyCheck_AppApp: App {
                 return nil
             }
         }
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .environmentObject(languageManager)
-                .environment(\.locale, languageManager.currentLocale)
-                .preferredColorScheme(colorScheme)
+    var body: some View {
+        Picker("Appearance", selection: $selectedAppearance) {
+            ForEach(Appearance.allCases) { mode in
+                Text(mode.rawValue).tag(mode)
+            }
         }
+        .pickerStyle(.menu)
     }
 }

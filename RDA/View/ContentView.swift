@@ -1,7 +1,6 @@
 import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var language: LanguageManager
-    
     var body: some View {
         NavigationStack {
             TabView(){
@@ -10,7 +9,6 @@ struct ContentView: View {
                         Image(systemName: "house")
                         Text("home")
                     }
-                
                 ScheduleView()
                     .tabItem {
                         Image(systemName: "calendar")

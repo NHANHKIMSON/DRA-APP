@@ -1,7 +1,10 @@
 import SwiftUI
 class LanguageManager: ObservableObject {
-    @Published var currentLocale: Locale = .init(identifier: "en")
-    
+    @Published var currentLocale: Locale = .init(identifier: "en") {
+          didSet {
+              UserDefaults.standard.set(currentLocale.identifier, forKey: "appLanguage")
+          }
+      }
     static let shared = LanguageManager()
     
     func setLanguage(_ code: String) {

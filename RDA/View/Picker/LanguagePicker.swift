@@ -1,5 +1,5 @@
 import SwiftUI
-struct LanguageSwitcher: View {
+struct LanguagePicker: View {
     @EnvironmentObject var language: LanguageManager
     
     var body: some View {
