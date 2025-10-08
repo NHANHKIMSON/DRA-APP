@@ -3,6 +3,7 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var language: LanguageManager
     @State private var selectedTab = 0
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         NavigationStack {
@@ -54,8 +55,21 @@ struct ContentView: View {
                     }
                     .padding(.horizontal)
                     .padding(.top, 8)
-                    .background(.white)
+                    .padding(.bottom, 18)
+                    .background(tabBarBackground)
+                    .shadow(color: Color.black.opacity(0.1), radius: 8, x: 0, y: -2)
                 }
+            }
+            .ignoresSafeArea(.all, edges: .bottom)
+        }
+    }
+    
+    private var tabBarBackground: some View {
+        Group {
+            if colorScheme == .dark {
+                Color(.systemGray6)
+            } else {
+                Color.white
             }
         }
     }
@@ -84,6 +98,7 @@ struct ContentView: View {
         print("FaceID action performed!")
     }
 }
+
 #Preview {
     ContentView()
         .environmentObject(LanguageManager.shared)
