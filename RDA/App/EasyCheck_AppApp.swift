@@ -3,6 +3,7 @@ import SwiftUI
 struct EasyCheck_AppApp: App {
     @StateObject var languageManager = LanguageManager.shared
     @AppStorage("appearance") private var selectedAppearance: Appearance = .system
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
         var colorScheme: ColorScheme? {
             switch selectedAppearance {
             case .light:
@@ -19,6 +20,10 @@ struct EasyCheck_AppApp: App {
                 .environmentObject(languageManager)
                 .environment(\.locale, languageManager.currentLocale)
                 .preferredColorScheme(colorScheme)
+                .onAppear{
+                    UNUserNotificationCenter.current().delegate = appDelegate
+                }
+
         }
     }
 }

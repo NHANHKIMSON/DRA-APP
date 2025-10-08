@@ -1,11 +1,3 @@
-//
-//  User 2.swift
-//  EasyCheck App
-//
-//  Created by Apple on 10/2/25.
-//
-
-
 import Foundation
 
 // Data Model

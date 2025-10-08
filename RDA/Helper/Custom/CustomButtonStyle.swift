@@ -1,11 +1,3 @@
-//
-//  CustomButtonStyle.swift
-//  EasyCheck App
-//
-//  Created by Apple on 10/3/25.
-//
-
-
 import SwiftUI
 struct CustomButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {

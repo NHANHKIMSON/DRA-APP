@@ -14,6 +14,11 @@ struct ContentView: View {
                         Image(systemName: "calendar")
                         Text("schedule")
                     }
+                NotificationView()
+                    .tabItem {
+                        Image(systemName: "bell")
+                        Text("notification")
+                    }
                 ProfileView()
                     .tabItem {
                         Image(systemName: "person")
@@ -22,13 +27,6 @@ struct ContentView: View {
             }
             .tint(Color("Prime"))
             .font(.custom("Noto Sans-Thin", size: 32))
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: NotificationView()) {
-                        Image(systemName: "bell")
-                    }
-                }
-            }
         }
     }
 }
