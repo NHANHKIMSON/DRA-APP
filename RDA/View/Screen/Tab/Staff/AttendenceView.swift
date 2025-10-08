@@ -1,5 +1,5 @@
 import SwiftUI
-struct HistoryView: View{
+struct AttendenceView: View{
     @EnvironmentObject var languageManager: LanguageManager
     @Environment(\.colorScheme) var colorScheme
     var body: some View{

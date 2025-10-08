@@ -1,7 +1,7 @@
 import SwiftUI
 import Foundation
 
-struct HomeView: View {
+struct RequestView: View {
     @EnvironmentObject var languageManager: LanguageManager
     @Environment(\.colorScheme) var colorScheme
     
@@ -12,17 +12,10 @@ struct HomeView: View {
                     .ignoresSafeArea(.all)
                 
                 VStack(spacing: 16) {
-                    Text("test")
+                    Text("Request View")
                         .font(.custom(languageManager.getFont(), size: 32))
                 }
                 .padding()
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: NotificationView()) {
-                        Image(systemName: "bell")
-                    }
-                }
             }
         }
     }
