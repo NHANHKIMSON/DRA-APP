@@ -6,17 +6,15 @@ struct ProfileView: View{
     @StateObject private var viewModel = UserViewModel()
     
     var body: some View {
-        NavigationView{
-            ZStack{
-                Color(colorScheme == .light ? Color.background : Color.clear).ignoresSafeArea(.all)
-                VStack{
-                    ColorSchemePicker()
-                    LanguagePicker()
-                }
+        ScrollView{
+            VStack{
+                ColorSchemePicker()
+                LanguagePicker()
             }
         }
     }
 }
+
 
 #Preview {
     ProfileView()

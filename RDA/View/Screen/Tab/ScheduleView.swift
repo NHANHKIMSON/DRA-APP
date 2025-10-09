@@ -4,8 +4,7 @@ struct ScheduleView: View{
     @Environment(\.colorScheme) var colorScheme
     @State var date: Date = Date.now
     var body: some View{
-        ZStack{
-            Color(colorScheme == .light ? Color.background : Color.clear).ignoresSafeArea(.all)
+        ScrollView{
             VStack {
                 DatePicker(selection: $date, label: {
                     Text("Date")
