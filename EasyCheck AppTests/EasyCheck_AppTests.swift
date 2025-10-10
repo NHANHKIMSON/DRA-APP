@@ -6,7 +6,7 @@
 //
 
 import Testing
-@testable import EasyCheck_App
+@testable import RDA
 
 struct EasyCheck_AppTests {
 

@@ -20,8 +20,3 @@ struct RequestView: View {
         }
     }
 }
-
-#Preview {
-    HomeView()
-        .environmentObject(LanguageManager.shared)
-}

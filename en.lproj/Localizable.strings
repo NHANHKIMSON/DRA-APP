@@ -1,13 +1,4 @@
-/* 
-  Localizable.strings
-  EasyCheck App
-
-  Created by Apple on 10/2/25.
-  
-*/
-
-// TabView
-
+// Tab
 "home" = "Home";
 "request" = "Request";
 "history" = "History";
@@ -16,15 +7,9 @@
 "profile" = "Profile";
 "faceid" = "Face ID";
 "attendance" = "Attendance";
+// -------------------------------------------------------
 
 "test" = "Using a few simple prompts, create professional, stylized, and structured documents with images, tables, and more. Get help refining your content, see the latest summary of your work, and ask questions to improve and finalize your document.";
-
-
-
-
-
-
-
 
 
 "welcome_message" = "Welcome to the app!";

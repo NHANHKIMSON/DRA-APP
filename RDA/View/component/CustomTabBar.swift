@@ -4,6 +4,7 @@ struct CustomTabBar: View {
     @EnvironmentObject var language: LanguageManager
     @Environment(\.colorScheme) var colorScheme
     @Binding var selectedTab: Int
+    @Binding var checkBio: Bool
     let onFaceIDTap: () -> Void
     
     private let tabs = [
@@ -22,7 +23,7 @@ struct CustomTabBar: View {
                 }
             }
             .padding(.horizontal, responsiveHorizontalPadding(geometry))
-            .padding(.vertical, responsiveVerticalPadding(geometry))
+            .padding(.top, responsiveVerticalPadding(geometry))
             .background(backgroundColor)
             .overlay(
                 Rectangle()
@@ -85,17 +86,17 @@ struct CustomTabBar: View {
                                     width: responsiveIconSize(geometry) + 40,
                                     height: responsiveIconSize(geometry) + 40
                                 )
-                            Image(systemName: tab.icon)
+                            Image(systemName: tab.icon == "faceid" ?   checkBio == true ? "faceid" : "touchid" : tab.icon)
                                 .font(.system(
                                     size: responsiveIconSize(geometry),
                                     weight: .medium
                                 ))
                                 .foregroundColor(.white)
                         }
-                        .offset(y: -6)
+                        .offset(y: geometry.size.width * -0.024)
                     }
                 }
-                .buttonStyle(PlainButtonStyle())
+                .buttonStyle(CustomButtonStyle())
                 .frame(maxWidth: .infinity)
                 .scaleEffect(selectedTab == tab.id ? 1.1 : 1.0)
                 .animation(.easeInOut(duration: 0.2), value: selectedTab)
@@ -119,7 +120,8 @@ struct CustomTabBar: View {
                              : tab.id == 1
                              ? "request"
                              : tab.id == 2
-                             ? "attendance"
+                             ? ""
+                             : tab.id == 3 ? "attendance"
                              : "profile")
                             .font(.system(
                                 size: responsiveTextSize(geometry),
@@ -130,9 +132,9 @@ struct CustomTabBar: View {
                             .lineLimit(1)
                     }
                 }
-                .buttonStyle(PlainButtonStyle())
+                .buttonStyle(CustomButtonStyle())
                 .frame(maxWidth: .infinity)
-                .scaleEffect(selectedTab == tab.id ? 1.05 : 1.0)
+                .scaleEffect(selectedTab == tab.id ? 1.02 : 1.0)
                 .animation(.easeInOut(duration: 0.2), value: selectedTab)
             )
         }
@@ -154,6 +156,11 @@ struct TabItem {
 }
 
 #Preview {
-    CustomTabBar(selectedTab: .constant(2), onFaceIDTap: {})
+    CustomTabBar(selectedTab: .constant(2), checkBio: .constant(false), onFaceIDTap: {})
+        .environmentObject(LanguageManager.shared)
+}
+
+#Preview {
+    ContentView()
         .environmentObject(LanguageManager.shared)
 }

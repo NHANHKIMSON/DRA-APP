@@ -10,7 +10,7 @@ final class UserViewModel: ObservableObject {
             users = try await UserService.shared.fetchUsers()
         } catch {
             errorMessage = error.localizedDescription
-            print("❌ Error: \(error.localizedDescription)")
+            print("Error: \(error.localizedDescription)")
         }
     }
 }

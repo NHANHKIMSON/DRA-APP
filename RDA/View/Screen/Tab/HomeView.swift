@@ -5,6 +5,8 @@ struct HomeView: View {
     @EnvironmentObject var languageManager: LanguageManager
     @Environment(\.colorScheme) var colorScheme
     
+    @Binding var isUnlocked: Bool
+    
     var body: some View {
         ScrollView{
             NavigationStack {
@@ -13,6 +15,9 @@ struct HomeView: View {
                         .ignoresSafeArea(.all)
                     
                     VStack(spacing: 16) {
+                        
+                        Text("You need to unluck: \(String(describing: isUnlocked))")
+                        
                         Text("test")
                             .font(.custom(languageManager.getFont(), size: 32))
                     }
@@ -20,7 +25,7 @@ struct HomeView: View {
                 }
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        NavigationLink(destination: NotificationView()) {
+                        NavigationLink(destination: NotificationView().navigationBarBackButtonHidden(true)) {
                             Image(systemName: "bell")
                         }
                     }

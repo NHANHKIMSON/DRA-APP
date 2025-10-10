@@ -23,7 +23,6 @@ struct EasyCheck_AppApp: App {
                 .onAppear{
                     UNUserNotificationCenter.current().delegate = appDelegate
                 }
-
         }
     }
 }
