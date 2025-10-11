@@ -3,5 +3,5 @@
 import Foundation
 
 protocol UserServiceProtocol {
-    func login(email: String, password: String) async throws -> Auth
+    func login(email: String, password: String) async throws
 }

@@ -1,55 +1,45 @@
-//
-//  NetworkManager.swift
-//  RDA
-//
-//  Created by Apple on 10/8/25.
-//
-
-
-// NetworkManager.swift
-
 import Foundation
 
 final class NetworkManager {
     static let shared = NetworkManager()
     private init() {}
 
-    /// Generic GET request function
-    func fetchData<T: Decodable>(from urlString: String, type: T.Type) async throws -> T {
-        guard let url = URL(string: urlString) else {
-            throw NetworkError.invalidURL
+    // MARK: - GET Request (with optional JWT)
+    func fetchData<T: Decodable>(from urlString: String, type: T.Type, requiresAuth: Bool = false) async throws -> T {
+        guard let url = URL(string: urlString) else { throw NetworkError.invalidURL }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+
+        if requiresAuth, let token = Authentication.shared.getAccessToken() {
+            request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
         }
 
-        let (data, response) = try await URLSession.shared.data(from: url)
+        let (data, response) = try await URLSession.shared.data(for: request)
 
-        guard let httpResponse = response as? HTTPURLResponse,
-              200..<300 ~= httpResponse.statusCode else {
+        guard let httpResponse = response as? HTTPURLResponse else {
             throw NetworkError.invalidResponse
         }
 
-        do {
-            let decodedData = try JSONDecoder().decode(T.self, from: data)
-            return decodedData
-        } catch {
-            throw NetworkError.decodingError
+        if httpResponse.statusCode == 401 {
+            throw NetworkError.unauthorized
         }
+
+        guard 200..<300 ~= httpResponse.statusCode else {
+            throw NetworkError.invalidResponse
+        }
+
+        return try JSONDecoder().decode(T.self, from: data)
     }
 
-    /// Generic POST request function
-    func postData<T: Codable, U: Decodable>(to urlString: String, body: T, type: U.Type) async throws -> U {
-        guard let url = URL(string: urlString) else {
-            throw NetworkError.invalidURL
-        }
+    // MARK: - POST Request
+    func postData<T: Encodable, U: Decodable>(to urlString: String, body: T, type: U.Type) async throws -> U {
+        guard let url = URL(string: urlString) else { throw NetworkError.invalidURL }
 
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-
-        do {
-            request.httpBody = try JSONEncoder().encode(body)
-        } catch {
-            throw NetworkError.decodingError
-        }
+        request.httpBody = try JSONEncoder().encode(body)
 
         let (data, response) = try await URLSession.shared.data(for: request)
 
@@ -58,11 +48,6 @@ final class NetworkManager {
             throw NetworkError.invalidResponse
         }
 
-        do {
-            let decodedResponse = try JSONDecoder().decode(U.self, from: data)
-            return decodedResponse
-        } catch {
-            throw NetworkError.decodingError
-        }
+        return try JSONDecoder().decode(U.self, from: data)
     }
 }

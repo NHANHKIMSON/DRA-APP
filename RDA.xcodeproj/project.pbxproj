@@ -6,20 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		188D2A452E9A9BAC00555558 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 188D2A442E9A9BAC00555558 /* SwiftKeychainWrapper */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		181AC5E82E8CE41E006F60EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 181AC5D22E8CE41C006F60EC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 181AC5D92E8CE41C006F60EC;
-			remoteInfo = "EasyCheck App";
+			remoteInfo = RDA;
 		};
 		181AC5F22E8CE41E006F60EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 181AC5D22E8CE41C006F60EC /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 181AC5D92E8CE41C006F60EC;
-			remoteInfo = "EasyCheck App";
+			remoteInfo = RDA;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188D2A452E9A9BAC00555558 /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,8 +117,9 @@
 			);
 			name = RDA;
 			packageProductDependencies = (
+				188D2A442E9A9BAC00555558 /* SwiftKeychainWrapper */,
 			);
-			productName = "EasyCheck App";
+			productName = RDA;
 			productReference = 181AC5DA2E8CE41C006F60EC /* RDA.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -136,7 +142,7 @@
 			name = RDATests;
 			packageProductDependencies = (
 			);
-			productName = "EasyCheck AppTests";
+			productName = RDATests;
 			productReference = 181AC5E72E8CE41E006F60EC /* RDATests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -159,7 +165,7 @@
 			name = RDAUITests;
 			packageProductDependencies = (
 			);
-			productName = "EasyCheck AppUITests";
+			productName = RDAUITests;
 			productReference = 181AC5F12E8CE41E006F60EC /* RDAUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -198,6 +204,7 @@
 			mainGroup = 181AC5D12E8CE41C006F60EC;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				188D2A432E9A9BAC00555558 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 181AC5DB2E8CE41C006F60EC /* Products */;
@@ -408,10 +415,10 @@
 				DEVELOPMENT_TEAM = M2X26DUJR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "EasyCheck-App-Info.plist";
+				INFOPLIST_FILE = "RDA-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "RDA APP";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "You need to scan using FaceID";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "You need to unlock your phone with FaceID";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -440,10 +447,10 @@
 				DEVELOPMENT_TEAM = M2X26DUJR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "EasyCheck-App-Info.plist";
+				INFOPLIST_FILE = "RDA-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "RDA APP";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "You need to scan using FaceID";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "You need to unlock your phone with FaceID";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -513,7 +520,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "EasyCheck App";
+				TEST_TARGET_NAME = RDA;
 			};
 			name = Debug;
 		};
@@ -530,7 +537,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "EasyCheck App";
+				TEST_TARGET_NAME = RDA;
 			};
 			name = Release;
 		};
@@ -574,6 +581,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		188D2A432E9A9BAC00555558 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		188D2A442E9A9BAC00555558 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 188D2A432E9A9BAC00555558 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 181AC5D22E8CE41C006F60EC /* Project object */;
 }

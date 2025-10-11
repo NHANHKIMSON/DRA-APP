@@ -1,31 +1,21 @@
 import SwiftUI
 
-import SwiftUI
-
 struct LoginView: View {
-    @StateObject private var viewModel = UserViewModel()
-    @State private var email = "admin@gmail.com"
-    @State private var password = "123"
+    @StateObject private var viewModel = AuthViewModel()
 
     var body: some View {
-        VStack(spacing: 20) {
-            TextField("Email", text: $email)
-                .textFieldStyle(.roundedBorder)
-            SecureField("Password", text: $password)
-                .textFieldStyle(.roundedBorder)
+        VStack(spacing: 16) {
+            TextField("Email", text: $viewModel.email)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            SecureField("Password", text: $viewModel.password)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
 
             Button("Login") {
                 Task {
-                    await viewModel.login(email: email, password: password)
+                    await viewModel.login()
                 }
             }
             .buttonStyle(.borderedProminent)
-
-            if let token = viewModel.auth?.payload.accessToken {
-                Text("Access Token: \(token)")
-                    .font(.caption)
-                    .padding()
-            }
 
             if let error = viewModel.errorMessage {
                 Text(error)
@@ -35,6 +25,12 @@ struct LoginView: View {
         .padding()
     }
 }
+//#Preview {
+//    LoginView()
+//}
+//
+
+
 #Preview {
     ContentView()
         .environmentObject(LanguageManager.shared)

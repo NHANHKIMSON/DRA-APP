@@ -1,11 +1,11 @@
 import Foundation
 
 @MainActor
-final class UserViewModel: ObservableObject {
+final class AuthViewModel: ObservableObject {
     @Published var email = ""
     @Published var password = ""
     @Published var errorMessage: String?
-    func login(email: String, password: String) async {
+    func login() async {
         do {
             try await UserService.shared.login(email: email, password: password)
             print(" Login successful! Token saved in Keychain.")

@@ -24,7 +24,7 @@ class BiometricManager{
     }
     
     func workwithbio(completionHandler: @escaping ()->Void?){
-        context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "This app work with Touch ID") { success, error in
+        context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "You need to unlock your phone with touch id") { success, error in
             if success{
                 completionHandler()
             }else{

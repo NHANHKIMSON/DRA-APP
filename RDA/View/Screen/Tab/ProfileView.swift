@@ -10,6 +10,9 @@ struct ProfileView: View{
             VStack{
                 ColorSchemePicker()
                 LanguagePicker()
+                Button("Logout") {
+                    Authentication.shared.logout()
+                }
             }
         }
     }

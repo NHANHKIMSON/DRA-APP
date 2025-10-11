@@ -4,6 +4,8 @@ struct RDA: App {
     @StateObject var languageManager = LanguageManager.shared
     @AppStorage("appearance") private var selectedAppearance: Appearance = .system
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
+    @StateObject private var auth = Authentication.shared
         var colorScheme: ColorScheme? {
             switch selectedAppearance {
             case .light:
@@ -16,13 +18,17 @@ struct RDA: App {
         }
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(languageManager)
-                .environment(\.locale, languageManager.currentLocale)
-                .preferredColorScheme(colorScheme)
-                .onAppear{
-                    UNUserNotificationCenter.current().delegate = appDelegate
-                }
+            if auth.loggedIn{
+                ContentView()
+                    .environmentObject(languageManager)
+                    .environment(\.locale, languageManager.currentLocale)
+                    .preferredColorScheme(colorScheme)
+                    .onAppear{
+                        UNUserNotificationCenter.current().delegate = appDelegate
+                    }
+            }else{
+                LoginView()
+            }
         }
     }
 }
