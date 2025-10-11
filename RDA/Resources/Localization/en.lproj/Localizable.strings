@@ -1,16 +1,81 @@
-// Tab
 "home" = "Home";
-"request" = "Request";
-"history" = "History";
-"schedule" = "Schedule";
-"notification" = "Notification";
-"profile" = "Profile";
-"faceid" = "Face ID";
 "attendance" = "Attendance";
-// -------------------------------------------------------
-
+"request" = "Request";
+"notification" = "Notificcation";
+"profile" = "Profile";
 "test" = "Using a few simple prompts, create professional, stylized, and structured documents with images, tables, and more. Get help refining your content, see the latest summary of your work, and ask questions to improve and finalize your document.";
-
-
 "welcome_message" = "Welcome to the app!";
 "edit_button" = "Edit";
+
+// home screen
+"attendacne" = "Attendance";
+"statistic" = "Statistic";
+"credit_attendance" = "Credit Attendance";
+"your_attitude_score_is" = "Your attitude score is";
+"attendance_summary" = "Attendance Summary";
+"extra_activity" = "Extra Activity";
+"date" = "Date";
+"swipe_to_check_in" = "Swipe to Check In";
+"group_leader" = "Group Leader";
+"attendee" = "Attendee";
+"type" = "Type";
+"swipe_to_check_out" = "Swipe to Check Out";
+"join_overtime" = "Join Overtime";
+"pending" = "Pending";
+"student_name" = "Student Name";
+"class" = "Class";
+"start_from" = "Start from";
+"end_at" = "End at";
+"duration" = "Duration";
+"today_students_attendance" = "Today Student’s Attendance";
+"request_permission" = "Request Permission";
+"reason" = "Reason";
+"shift" = "Shift";
+
+// Attendance screen
+"my_attendance" = "My Attendance";
+"track_your_attendance_record_and_statistics" = "Track your attendance record and statistics";
+"date_filter" = "Date filter";
+"summary" = "Summary";
+"recent_history" = "Recent history";
+"total_records" = "total records";
+"total_record" = "total record"
+"all" = "All";
+"select_month" = "Select month";
+"clear" = "Clear";
+
+//Profile screen
+"check_in_and_check_out" = "Check-in & Check-out";
+"course_time_and_privacy" = "Course Time and Activity";
+
+// months
+"january" = "January";
+"february" = "February";
+"march" = "March";
+"april" = "April";
+"may" = "May";
+"june" = "June";
+"july" = "July";
+"august" = "August";
+"september" = "September";
+"october" = "October";
+"november" = "November";
+"december" = "December";
+
+// Attendance status
+"late" = "Late";
+"permission" = "Permission";
+"absent" = "Absent";
+"present" = "Present";
+"miss_scan" = "Miss scan";
+"on_time" = "On Time";
+"check_in" = "Check In";
+"check_out" = "Check Out";
+"early_checkout" = "Early Check-Out";
+"miss_check_in" = "Miss Check-in";
+"miss_check_out" = "Miss Check-Out";
+"leave_early" = "Leave Early";
+"outside" = "Outside";
+
+//Request
+"overtime" = "Overtime";

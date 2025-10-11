@@ -1,15 +1,80 @@
-// Tab
 "home" = "홈";
-"request" = "기록";
-"history" = "기록";
-"schedule" = "일정";
+"attendance" = "출석";
+"request" = "요청";
 "notification" = "알림";
 "profile" = "프로필";
-"faceid" = "얼굴인식";
-"attendance" = "출석";
-// -------------------------------------------------------
-
 "test" = "몇 가지 간단한 프롬프트를 사용하여 이미지, 표 등을 포함한 전문적이고 스타일화된 구조화된 문서를 만드세요. 콘텐츠 정제에 도움을 받고, 최신 작업 요약을 확인하고, 문서를 개선하고 마무리하기 위한 질문을 하세요.";
-
 "welcome_message" = "앱에 오신 것을 환영합니다!";
 "edit_button" = "편집";
+
+// home screen
+"attendacne" = "출석";
+"statistic" = "통계";
+"credit_attendance" = "출석 학점";
+"your_attitude_score_is" = "당신의 태도 점수는";
+"attendance_summary" = "출석 요약";
+"extra_activity" = "추가 활동";
+"date" = "날짜";
+"swipe_to_check_in" = "스와이프하여 출근";
+"group_leader" = "그룹 리더";
+"attendee" = "참석자";
+"type" = "유형";
+"swipe_to_check_out" = "스와이프하여 퇴근";
+"join_overtime" = "초과 근무 참여";
+"pending_kr" = "대기 중";
+"student_name" = "학생 이름";
+"class" = "수업";
+"start_from" = "시작일";
+"end_at" = "종료일";
+"duration" = "기간";
+"today_students_attendance" = "오늘 학생 출석";
+"request_permission" = "허가 요청";
+"reason" = "사유";
+"shift" = "근무조";
+
+// Attendance Screen student
+"my_attendance" = "나의 출석";
+"track_your_attendance_record_and_statistics" = "출석 기록과 통계를 추적하세요";
+"date_filter" = "날짜 필터";
+"summary" = "요약";
+"recent_history" = "최근 기록";
+"total_records" = "총 기록 수";
+"total_record" = "총 기록";
+"all" = "전체";
+"clear" = "지우기";
+
+// Profile screen
+"check_in_and_check_out" = "출근 & 퇴근";
+"course_time_and_privacy" = "강의 시간 및 활동";
+
+//months
+"january" = "1 월";
+"february" = "2 월";
+"march" = "3 월";
+"april" = "4 월";
+"may" = "5 월";
+"june" = "6 월";
+"july" = "7 월";
+"august" = "8 월";
+"september" = "9 월";
+"october" = "10 월";
+"november" = "11 월";
+"december" = "12 월";
+
+// Attendance status
+"late" = "지각";
+"permission" = "허가";
+"absent" = "결석";
+"present" = "출석";
+"miss_scan" = "스캔 누락";
+"on_time" = "정시";
+"check_in" = "출근";
+"check_out" = "퇴근";
+"early_checkout" = "조기 퇴근";
+"miss_check_in" = "출근 누락";
+"miss_check_out" = "퇴근 누락";
+"leave_early" = "조기 퇴근";
+"outside" = "외출";
+
+// Request
+"overtime" = "초과 근무";

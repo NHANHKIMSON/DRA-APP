@@ -1,16 +1,80 @@
-// Tab
-"home" = "ទំព័រដើម"; 
-"request" = "ស្នើរសុំ";
-"history" = "ប្រវត្ត";
-"schedule" = "កាលវិភាគ";
+"home" = "ទំព័រដើម";
 "attendance" = "វត្តមាន";
+"request" = "សំណើរ";
 "notification" = "សារដំណឹង";
 "profile" = "ពត៌មានផ្ទាល់ខ្លួន";
-// -------------------------------------------------------
-
-
-
 "test" = "ការរចនាក្ដារចុចខ្មែរទំនើបសម្រាប់បង្កើនល្បឿនវាយអក្សរជាមួយនឹងការរចនាថ្មី។ ប្លង់ក្ដារចុចថ្មី គាំទ្រភាសារ៉ូម៉ាំងទៅជាភាសាខ្មែរ ជាមួយនឹងការបែងចែកពាក្យដោយស្វ័យប្រវត្តិដោយប្រើការសិក្សាស៊ីជម្រៅ(Deep learning)។";
-
 "welcome_message" = "សូមស្វាគមន៍";
 "edit_button" = "កែប្រែ";
+
+//home screen
+"attendacne" = "វត្តមាន";
+"statistic" = "ស្ថិតិ";
+"credit_attendance" = "វត្តមានក្រេឌីត";
+"your_attitude_score_is" = "ពិន្ទុអាកប្បកិរិយារបស់អ្នកគឺ";
+"attendance_summary" = "សង្ខេបវត្តមាន";
+"extra_activity" = "សកម្មភាពបន្ថែម";
+"date" = "កាលបរិច្ឆេទ";
+"swipe_to_check_in" = "អូសទៅស្តាំដើម្បី Check-In";
+"group_leader" = "មេក្រុម";
+"attendee" = "អ្នកចូលរួម";
+"type" = "ប្រភេទ";
+"swipe_to_check_out" = "អូសទៅស្តាំដើម្បីចេញពីការងារ";
+"join_overtime" = "ចូលរួមថែមម៉ោង";
+"pending_kh" = "កំពុងរង់ចាំ";
+"student_name" = "ឈ្មោះសិស្ស";
+"class" = "ថ្នាក់";
+"start_from" = "ចាប់ផ្តើមពី";
+"end_at" = "បញ្ចប់នៅ";
+"duration" = "រយៈពេល";
+"today_students_attendance" = "វត្តមានសិស្សថ្ងៃនេះ";
+"request_permission" = "ស្នើសុំការអនុញ្ញាត";
+"reason" = "មូលហេតុ";
+"shift" = "វេន";
+
+// Attendance screen
+"my_attendance" = "វត្តមានរបស់ខ្ញុំ";
+"track_your_attendance_record_and_statistics" = "តាមដានកំណត់ត្រា និងស្ថិតិវត្តមានរបស់អ្នក";
+"date_filter" = "Filter កាលបរិច្ឆេទ";
+"summary" = "សង្ខេប";
+"recent_history" = "ប្រវត្តិថ្មីៗ";
+"total_records" = "ចំនួនកំណត់ត្រាសរុប";
+"total_record" = "ចំនួនកំណត់ត្រាសរុប";
+"all" = "ទាំងអស់";
+"clear" = "សម្អាត";
+
+// Profile screen
+"check_in_and_check_out" = "ស្កេនចូល & ស្កេនចេញ";
+"course_time_and_privacy" = "ម៉ោងនិងសកម្មភាពនៃវគ្គសិក្សា";
+
+//months
+"january" = "មករា";
+"february" = "កុម្ភៈ";
+"march" = "មីនា";
+"april" = "មេសា";
+"may" = "ឧសភា";
+"june" = "មិថុនា";
+"july" = "កក្ដដា";
+"august" = "សីហា";
+"september" = "កញ្ញា";
+"october" = "តុលា";
+"november" = "វិច្ឆិកា";
+"december" = "ធ្នូ";
+
+//Attendance status
+"late" = "យឺត";
+"permission" = "សុំច្បាប់";
+"absent" = "អវត្តមាន";
+"present" = "វត្តមាន";
+"miss_scan" = "ខកខានស្កេន";
+"on_time" = "ទាន់ពេលវេលា";
+"check_in" = "ស្កេនចូល";
+"check_out" = "ស្កេនចេញ";
+"early_checkout" = "ស្កេនចេញមុនពេល";
+"miss_check_in" = "ខកខានស្កេនចូល";
+"miss_check_out" = "ខកខានស្កេនចេញ";
+"leave_early" = "ចាកចេញមុន";
+"outside" = "ចេញក្រៅ";
+
+// Request
+"overtime" = "ម៉ោងបន្ថែម";
