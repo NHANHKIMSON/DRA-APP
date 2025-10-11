@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		1895D12C2E8E95F500189A0D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1895D12A2E8E95F500189A0D /* Localizable.strings */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		181AC5E82E8CE41E006F60EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -31,9 +27,6 @@
 		181AC5DA2E8CE41C006F60EC /* RDA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181AC5E72E8CE41E006F60EC /* RDATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RDATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		181AC5F12E8CE41E006F60EC /* RDAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RDAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1895D12B2E8E95F500189A0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		1895D12D2E8E962A00189A0D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
-		1895D12E2E8E968400189A0D /* km-KH */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "km-KH"; path = "km-KH.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -42,14 +35,14 @@
 			path = RDA;
 			sourceTree = "<group>";
 		};
-		181AC5EA2E8CE41E006F60EC /* EasyCheck AppTests */ = {
+		181AC5EA2E8CE41E006F60EC /* RDA AppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "EasyCheck AppTests";
+			path = "RDA AppTests";
 			sourceTree = "<group>";
 		};
-		181AC5F42E8CE41E006F60EC /* EasyCheck AppUITests */ = {
+		181AC5F42E8CE41E006F60EC /* RDA AppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "EasyCheck AppUITests";
+			path = "RDA AppUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -82,10 +75,9 @@
 		181AC5D12E8CE41C006F60EC = {
 			isa = PBXGroup;
 			children = (
-				1895D12A2E8E95F500189A0D /* Localizable.strings */,
 				181AC5DC2E8CE41C006F60EC /* RDA */,
-				181AC5EA2E8CE41E006F60EC /* EasyCheck AppTests */,
-				181AC5F42E8CE41E006F60EC /* EasyCheck AppUITests */,
+				181AC5EA2E8CE41E006F60EC /* RDA AppTests */,
+				181AC5F42E8CE41E006F60EC /* RDA AppUITests */,
 				181AC5DB2E8CE41C006F60EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -139,7 +131,7 @@
 				181AC5E92E8CE41E006F60EC /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				181AC5EA2E8CE41E006F60EC /* EasyCheck AppTests */,
+				181AC5EA2E8CE41E006F60EC /* RDA AppTests */,
 			);
 			name = RDATests;
 			packageProductDependencies = (
@@ -162,7 +154,7 @@
 				181AC5F32E8CE41E006F60EC /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				181AC5F42E8CE41E006F60EC /* EasyCheck AppUITests */,
+				181AC5F42E8CE41E006F60EC /* RDA AppUITests */,
 			);
 			name = RDAUITests;
 			packageProductDependencies = (
@@ -224,7 +216,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1895D12C2E8E95F500189A0D /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,19 +271,6 @@
 			targetProxy = 181AC5F22E8CE41E006F60EC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1895D12A2E8E95F500189A0D /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1895D12B2E8E95F500189A0D /* en */,
-				1895D12D2E8E962A00189A0D /* ko */,
-				1895D12E2E8E968400189A0D /* km-KH */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		181AC5F92E8CE41E006F60EC /* Debug */ = {
@@ -444,7 +422,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ios.EasyCheck-App";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kshrd.rda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -476,7 +454,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ios.EasyCheck-App";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kshrd.rda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -494,7 +472,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ios.EasyCheck-AppTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kshrd.rda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -513,7 +491,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ios.EasyCheck-AppTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kshrd.rda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -530,7 +508,7 @@
 				DEVELOPMENT_TEAM = M2X26DUJR5;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ios.EasyCheck-AppUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kshrd.rda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -547,7 +525,7 @@
 				DEVELOPMENT_TEAM = M2X26DUJR5;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ios.EasyCheck-AppUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kshrd.rda;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;

@@ -5,13 +5,13 @@ struct NotificationView: View {
     @EnvironmentObject var languageManager: LanguageManager
     @State var description: String = "Dear teacher SOK POLEN and teacher Von Tavan my name is Cody from BTB class I would like to ask permission for afternoon shift as I am experiencing a high fever. Thank you for your understanding teacher."
     var body: some View {
-        ZStack {
+        ZStack{
             Color(colorScheme == .light ? Color.background : Color.clear)
                 .ignoresSafeArea(.all)
             ScrollView{
                 NotificationMessage(description: $description)
+                NotificationMessage(description: $description)
             }
-            .padding(.horizontal)
             .toolbar{
                 ToolbarItem(placement: .topBarLeading){
                     Button(action: {

@@ -1,6 +1,6 @@
 import SwiftUI
 @main
-struct EasyCheck_AppApp: App {
+struct RDA: App {
     @StateObject var languageManager = LanguageManager.shared
     @AppStorage("appearance") private var selectedAppearance: Appearance = .system
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate

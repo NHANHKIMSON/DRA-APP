@@ -1,9 +1,9 @@
 import Foundation
 
 enum APIEndpoints {
-    static let baseURL = "https://jsonplaceholder.typicode.com"
+    static let baseURL = "http://localhost:8080/api/v1"
 
-    static var users: String {
-        return "\(baseURL)/users"
+    static var login: String{
+        return "\(baseURL)/auths/login"
     }
 }

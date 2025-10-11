@@ -15,7 +15,6 @@ struct ProfileView: View{
     }
 }
 
-
 #Preview {
     ProfileView()
         .environmentObject(LanguageManager.shared)

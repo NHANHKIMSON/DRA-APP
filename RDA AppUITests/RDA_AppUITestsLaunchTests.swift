@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class EasyCheck_AppUITestsLaunchTests: XCTestCase {
+final class RDA_AppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

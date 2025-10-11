@@ -6,12 +6,9 @@ final class UserService: UserServiceProtocol {
     static let shared = UserService()
     private init() {}
 
-    func fetchUsers() async throws -> [User] {
-        // Use the shared NetworkManager instead of raw URLSession
-        let users = try await NetworkManager.shared.fetchData(
-            from: APIEndpoints.users,
-            type: [User].self
-        )
-        return users
+    func login(email: String, password: String) async throws -> Auth {
+        let loginRequest = LoginRequest(email: email, password: password)
+        let response = try await NetworkManager.shared.postData(to: APIEndpoints.login, body: loginRequest, type: Auth.self)
+        return response
     }
 }

@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class EasyCheck_AppUITests: XCTestCase {
+final class RDA_AppUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
