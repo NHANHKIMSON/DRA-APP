@@ -1,14 +1,13 @@
 "home" = "Home";
 "attendance" = "Attendance";
 "request" = "Request";
-"notification" = "Notificcation";
+"notification" = "Notification";
 "profile" = "Profile";
 "test" = "Using a few simple prompts, create professional, stylized, and structured documents with images, tables, and more. Get help refining your content, see the latest summary of your work, and ask questions to improve and finalize your document.";
 "welcome_message" = "Welcome to the app!";
 "edit_button" = "Edit";
 
 // home screen
-"attendacne" = "Attendance";
 "statistic" = "Statistic";
 "credit_attendance" = "Credit Attendance";
 "your_attitude_score_is" = "Your attitude score is";
@@ -39,7 +38,7 @@
 "summary" = "Summary";
 "recent_history" = "Recent history";
 "total_records" = "total records";
-"total_record" = "total record"
+"total_record" = "total record";
 "all" = "All";
 "select_month" = "Select month";
 "clear" = "Clear";

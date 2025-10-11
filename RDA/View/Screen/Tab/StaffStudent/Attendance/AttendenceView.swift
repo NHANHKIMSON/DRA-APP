@@ -6,13 +6,17 @@ struct AttendenceView: View{
         ZStack{
             Color(colorScheme == .light ? Color.background : Color.clear).ignoresSafeArea(.all)
             VStack{
-                Text("History view")
+                HStack{
+                    Image("")
+                }
+                
+                Text("")
                     .font(.custom(languageManager.getFont(), size: 32))
             }
         }
     }
 }
 #Preview {
-    ContentView()
+    AttendenceView()
         .environmentObject(LanguageManager.shared)
 }

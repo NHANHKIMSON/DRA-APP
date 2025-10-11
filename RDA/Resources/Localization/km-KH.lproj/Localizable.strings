@@ -8,7 +8,6 @@
 "edit_button" = "កែប្រែ";
 
 //home screen
-"attendacne" = "វត្តមាន";
 "statistic" = "ស្ថិតិ";
 "credit_attendance" = "វត្តមានក្រេឌីត";
 "your_attitude_score_is" = "ពិន្ទុអាកប្បកិរិយារបស់អ្នកគឺ";
@@ -21,7 +20,7 @@
 "type" = "ប្រភេទ";
 "swipe_to_check_out" = "អូសទៅស្តាំដើម្បីចេញពីការងារ";
 "join_overtime" = "ចូលរួមថែមម៉ោង";
-"pending_kh" = "កំពុងរង់ចាំ";
+"pending" = "កំពុងរង់ចាំ";
 "student_name" = "ឈ្មោះសិស្ស";
 "class" = "ថ្នាក់";
 "start_from" = "ចាប់ផ្តើមពី";
@@ -41,6 +40,7 @@
 "total_records" = "ចំនួនកំណត់ត្រាសរុប";
 "total_record" = "ចំនួនកំណត់ត្រាសរុប";
 "all" = "ទាំងអស់";
+"select_month" = "ជ្រើសរើសខែ";
 "clear" = "សម្អាត";
 
 // Profile screen
