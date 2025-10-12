@@ -46,6 +46,13 @@
 //Profile screen
 "check_in_and_check_out" = "Check-in & Check-out";
 "course_time_and_privacy" = "Course Time and Activity";
+"select" = "Select";
+"khmer" = "Khmer";
+"english" = "English";
+"korean" = "Korean";
+"please_select_a_display_languages" = "Please select a display language";
+"languages" = "Languages";
+"push_notification" = "Push Notification";
 
 // months
 "january" = "January";

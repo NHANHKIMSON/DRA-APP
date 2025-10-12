@@ -46,6 +46,13 @@
 // Profile screen
 "check_in_and_check_out" = "출근 & 퇴근";
 "course_time_and_privacy" = "강의 시간 및 활동";
+"select" = "선택해요";
+"khmer" = "크메르어";
+"english" = "영어";
+"korean" = "한국어";
+"please_select_a_display_languages" = "표시 언어를 선택하세요";
+"languages" = "언어";
+"push_notification" = "푸시 알림";
 
 //months
 "january" = "1 월";

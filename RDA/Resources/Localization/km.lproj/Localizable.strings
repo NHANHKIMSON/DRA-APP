@@ -46,6 +46,13 @@
 // Profile screen
 "check_in_and_check_out" = "ស្កេនចូល & ស្កេនចេញ";
 "course_time_and_privacy" = "ម៉ោងនិងសកម្មភាពនៃវគ្គសិក្សា";
+"select" = "ជ្រើសរើស";
+"khmer" = "ខ្មែរ";
+"english" = "អង់គ្លេស";
+"korean" = "កូរ៉េ";
+"please_select_a_display_languages" = "សូមជ្រើសរើសភាសាបង្ហាញ";
+"languages" = "ភាសា";
+"push_notification" = "ការជូនដំណឹង";
 
 //months
 "january" = "មករា";

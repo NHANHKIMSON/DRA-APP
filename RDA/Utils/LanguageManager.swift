@@ -1,10 +1,10 @@
 import SwiftUI
 class LanguageManager: ObservableObject {
     @Published var currentLocale: Locale = .init(identifier: "en") {
-          didSet {
-              UserDefaults.standard.set(currentLocale.identifier, forKey: "appLanguage")
-          }
-      }
+        didSet {
+            UserDefaults.standard.set(currentLocale.identifier, forKey: "appLanguage")
+        }
+    }
     static let shared = LanguageManager()
     
     func setLanguage(_ code: String) {
@@ -12,6 +12,13 @@ class LanguageManager: ObservableObject {
         UserDefaults.standard.set(code, forKey: "appLanguage")
     }
     
+    func localizedString(forKey key: String) -> String {
+        guard let path = Bundle.main.path(forResource: currentLocale.identifier, ofType: "lproj"),
+              let bundle = Bundle(path: path) else {
+            return NSLocalizedString(key, comment: "")
+        }
+        return NSLocalizedString(key, bundle: bundle, comment: "")
+    }
     func getFont()-> String{
         switch currentLocale.identifier{
         case "km": return "KantumruyPro-Regular"   // Khmer font
