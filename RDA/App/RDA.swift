@@ -18,7 +18,7 @@ struct RDA: App {
         }
     var body: some Scene {
         WindowGroup {
-            if auth.loggedIn{
+//            if auth.loggedIn{
                 ContentView()
                     .environmentObject(languageManager)
                     .environment(\.locale, languageManager.currentLocale)
@@ -26,9 +26,9 @@ struct RDA: App {
                     .onAppear{
                         UNUserNotificationCenter.current().delegate = appDelegate
                     }
-            }else{
-                LoginView()
-            }
+//            }else{
+//                LoginView()
+//            }
         }
     }
 }
