@@ -57,7 +57,7 @@ struct ChanngeLanguageItem: View {
                 .font(.custom(languageManager.getFont(), size: UIFont.preferredFont(forTextStyle: .title1).pointSize))
                 .fontWeight(.semibold)
             HStack{
-                Text("please_select_a_display_languages")
+                Text(languageManager.localizedString(forKey: "please_select_a_display_languages"))
                 Spacer()
             }
             LanguagePicker()
